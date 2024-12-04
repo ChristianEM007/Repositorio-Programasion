@@ -8,6 +8,12 @@ package daw;
 public class ComprasOO {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        
+        // Instantiacion de un objeto con el constructor por defecto
+        
+        Clientes c1 = new Clientes();
+        
+        System.out.println(c1);
+        
     }
 }
