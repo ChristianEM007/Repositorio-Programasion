@@ -52,20 +52,59 @@ public class Clientes {
         
     }
     
-    //metodo get para el id
-    public int getIdCliente(){
+    public int getIdCliente() {
         return idCliente;
     }
-    public String getNombre(){
+
+    public void setIdCliente(int idCliente) {
+        this.idCliente = idCliente;
+    }
+
+    public String getNombre() {
         return nombre;
     }
-    public void setApellidos(String nuevoAp){
-        apellidos = nuevoAp;
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getApellidos() {
+        return apellidos;
+    }
+
+    public void setApellidos(String apellidos) {
+        this.apellidos = apellidos;
+    }
+
+    public String getNif() {
+        return nif;
+    }
+
+    public void setNif(String nif) {
+        this.nif = nif;
+    }
+
+    public String getTelefono() {
+        return telefono;
+    }
+
+    public void setTelefono(String telefono) {
+        this.telefono = telefono;
+    }
+
+    public LocalDate getFechaNacimiento() {
+        return fechaNacimiento;
+    }
+
+    public void setFechaNacimiento(LocalDate fechaNacimiento) {
+        this.fechaNacimiento = fechaNacimiento;
     }
     
     // Sobreescritura del metodo toString
     // Devuelve un String con la representacion del objeto
     public String toString(){
-        return "nombre: "+nombre+" apellido: "+apellidos+" nif: "+nif;
+        return "nombre: "+nombre+" apellido: "+apellidos+" nif: "+nif+"; fecha nacimiento: "+fechaNacimiento;
     }
+
+    
 }
